@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web-based MySQL Client</title>
+</head>
+<body style="background-color: #FFFFFF">
+    <h2>Web-based MySQL Client</h2>
+    <form action="sqlclient.php" method="POST">
+        <label>Server Name:</label>
+        <input type="text" name="server_name"><br><br>
+        <label>MySQL User:</label>
+        <input type="text" name="mysql_user"><br><br>
+        <label>MySQL Pass:</label>
+        <input type="password" name="mysql_pass"><br><br>
+        <label>MySQL Database:</label>
+        <input type="text" name="mysql_database"><br><br>
+        <label>(Note: Leave database blank if creating a database) SQL: </label> <br>
+        <textarea name="sql_query" rows="5" cols="40"></textarea>
+        <input type="submit" value="Go">
+    </form>
+</body>
+</html>
